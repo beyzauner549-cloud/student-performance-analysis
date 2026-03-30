@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_e679fb4724b30235e622758accb6731a {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_e679fb4724b30235e622758accb6731a" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_e679fb4724b30235e622758accb6731a = L.map(
+                "map_e679fb4724b30235e622758accb6731a",
+                {
+                    center: [38.5, 34.5],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 6,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_58f3cf8ef244c9033ebad47632449d0e = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_58f3cf8ef244c9033ebad47632449d0e.addTo(map_e679fb4724b30235e622758accb6731a);
+        
+    
+            var marker_3670d9bbdcb42a7949054d018f3f0fe5 = L.marker(
+                [41.38871, 33.78273],
+                {
+}
+            ).addTo(map_e679fb4724b30235e622758accb6731a);
+        
+    
+            var icon_4fb872da4438bc88ca09585451aa0cb4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7080d32ffce7ec4202c7b03ce5f72296 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2233009d276a7e78ff290a5db96aa23d = $(`<div id="html_2233009d276a7e78ff290a5db96aa23d" style="width: 100.0%; height: 100.0%;">Kastamonu Şube</div>`)[0];
+                popup_7080d32ffce7ec4202c7b03ce5f72296.setContent(html_2233009d276a7e78ff290a5db96aa23d);
+            
+        
+
+        marker_3670d9bbdcb42a7949054d018f3f0fe5.bindPopup(popup_7080d32ffce7ec4202c7b03ce5f72296)
+        ;
+
+        
+    
+    
+            marker_3670d9bbdcb42a7949054d018f3f0fe5.bindTooltip(
+                `<div>
+                     Kastamonu
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_3670d9bbdcb42a7949054d018f3f0fe5.setIcon(icon_4fb872da4438bc88ca09585451aa0cb4);
+            
+    
+            var marker_dee305159cb607ba39b01afa3df1df24 = L.marker(
+                [40.74104, 30.33129],
+                {
+}
+            ).addTo(map_e679fb4724b30235e622758accb6731a);
+        
+    
+            var icon_b250f35120678da701970d556ea05105 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b5e4c657b53b400de1e774b5efd14008 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5c273cce75889634b3702fb0497350d7 = $(`<div id="html_5c273cce75889634b3702fb0497350d7" style="width: 100.0%; height: 100.0%;">Sakarya Şube</div>`)[0];
+                popup_b5e4c657b53b400de1e774b5efd14008.setContent(html_5c273cce75889634b3702fb0497350d7);
+            
+        
+
+        marker_dee305159cb607ba39b01afa3df1df24.bindPopup(popup_b5e4c657b53b400de1e774b5efd14008)
+        ;
+
+        
+    
+    
+            marker_dee305159cb607ba39b01afa3df1df24.bindTooltip(
+                `<div>
+                     Sakarya
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_dee305159cb607ba39b01afa3df1df24.setIcon(icon_b250f35120678da701970d556ea05105);
+            
+    
+            var marker_2e760182feb652b13d19433ddfba0f6c = L.marker(
+                [37.0, 35.3213],
+                {
+}
+            ).addTo(map_e679fb4724b30235e622758accb6731a);
+        
+    
+            var icon_469b24bf3108f52e60831d8810b6ec48 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_cc2982c030d87b2dd3f3d05635152619 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8057113cc14196bd9ea62524acbe0036 = $(`<div id="html_8057113cc14196bd9ea62524acbe0036" style="width: 100.0%; height: 100.0%;">Adana Şube</div>`)[0];
+                popup_cc2982c030d87b2dd3f3d05635152619.setContent(html_8057113cc14196bd9ea62524acbe0036);
+            
+        
+
+        marker_2e760182feb652b13d19433ddfba0f6c.bindPopup(popup_cc2982c030d87b2dd3f3d05635152619)
+        ;
+
+        
+    
+    
+            marker_2e760182feb652b13d19433ddfba0f6c.bindTooltip(
+                `<div>
+                     Adana
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_2e760182feb652b13d19433ddfba0f6c.setIcon(icon_469b24bf3108f52e60831d8810b6ec48);
+            
+    
+            var poly_line_7c05aa3aa0b6c27a6d82e02a0421037b = L.polyline(
+                [[40.74104, 30.33129], [41.38871, 33.78273], [37.0, 35.3213]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(map_e679fb4724b30235e622758accb6731a);
+        
+    
+            var circle_59fa1300189c29f478f9f9add6ba4e00 = L.circle(
+                [37.874642, 32.493155],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 40000, "stroke": true, "weight": 3}
+            ).addTo(map_e679fb4724b30235e622758accb6731a);
+        
+    
+        var popup_41f3335b1b0b2ab8970a47b104ef75cd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_921ba3efe3aa18ee75fe599451a37905 = $(`<div id="html_921ba3efe3aa18ee75fe599451a37905" style="width: 100.0%; height: 100.0%;">Konya Bölgesi (40 km)</div>`)[0];
+                popup_41f3335b1b0b2ab8970a47b104ef75cd.setContent(html_921ba3efe3aa18ee75fe599451a37905);
+            
+        
+
+        circle_59fa1300189c29f478f9f9add6ba4e00.bindPopup(popup_41f3335b1b0b2ab8970a47b104ef75cd)
+        ;
+
+        
+    
+</script>
+</html>
