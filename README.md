@@ -21,4 +21,15 @@ Bu projede Python kullanılarak veri analizi, görselleştirme ve harita oluştu
 ## Çıktılar
 
 * Veri görselleştirme grafiklerinin oluşturulması
-* Etkileşimli harita (HTML formatında)
+* Etkileşimli Türkiye haritası (turkiye_harita.html)
+* Analiz sonuçlarının yorumlanması
+
+## Projeyi Çalıştırma
+
+1. Gerekli kütüphaneleri yükleyin:
+   pip install pandas matplotlib seaborn folium
+
+2. Python dosyasını çalıştırın:
+   python main.py
+
+3. Harita çıktısı "turkiye_harita.html" dosyası olarak oluşacaktır.
